@@ -146,6 +146,115 @@ func main() {
 	hasAccess:= isAdmin && isLoggedIn || isLoggedIn && !isAdmin
 	fmt.Println(hasAccess)
 
+	// Урок 10
+	temperature2 :=21
+	if temperature2 < 0 {
+		fmt.Println("Холодно")
+	} else if temperature2 >= 0 && temperature2 <= 20{
+			fmt.Println("Тепло")
+	} else {
+		fmt.Println("Жарко")
+	}
+
+	score2 := 66
+	if score2>=90 {
+		fmt.Println("Отлично")
+	} else if score2 >= 70 && score2<= 89{
+		fmt.Println("Хорошо")
+	}else if score2 >= 50 && score2<= 69 {
+		fmt.Println("Удовлетворительно")
+	}else if score2 <= 50{
+		fmt.Println("Не сдал")
+	}
+
+
+	hour := 14
+	switch {
+	case hour >= 0 && hour <= 5:
+		fmt.Println("Ночь")
+	case hour >= 6 && hour <= 11:
+		fmt.Println("Утро")
+	case hour >= 12 && hour <= 17:
+		fmt.Println("День")
+	case hour >= 18 && hour <= 23:
+		fmt.Println("Вечер")
+	default:
+		fmt.Println("Некорректное значение времени")
+	}
+	
+
+	var number int
+	fmt.Print("Введите число: ")
+	fmt.Scan(&number)
+	if number%2 == 0 {
+		fmt.Println("Чётное число")
+	} else {
+		fmt.Println("Нечётное число")
+	}
+
+
+	day := "Monday" 
+	switch day {
+	case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday":
+		fmt.Println("Будний день")
+	case "Saturday", "Sunday":
+		fmt.Println("Выходной")
+	default:
+		fmt.Println("Некорректный день")
+	}
+
+
+	balance := 100 
+	if balance >= 0 {
+		fmt.Println("Баланс положительный")
+	} else {
+		fmt.Println("Баланс отрицательный")
+	}
+
+
+	var age3 int
+	fmt.Print("Введите возраст: ")
+	fmt.Scan(&age3)
+	if age3 < 13 {
+		fmt.Println("Ребёнок")
+	} else if age3 >= 13 && age3 <= 17 {
+		fmt.Println("Подросток")
+	} else {
+		fmt.Println("Взрослый")
+	}
+
+
+	var command string
+	fmt.Print("Введите команду: ")
+	fmt.Scan(&command)
+	switch command {
+	case "start":
+		fmt.Println("Запуск")
+	case "stop":
+		fmt.Println("Остановка")
+	case "restart":
+		fmt.Println("Перезапуск")
+	default:
+		fmt.Println("Неизвестная команда")
+	}
+
+
+	grade := 4 
+	switch grade {
+	case 5:
+		fmt.Println("A")
+	case 4:
+		fmt.Println("B")
+	case 3:
+		fmt.Println("C")
+	case 2:
+		fmt.Println("D")
+	case 1:
+		fmt.Println("F")
+	default:
+		fmt.Println("Некорректная оценка")
+	}
+
 
 
 
