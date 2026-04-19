@@ -112,6 +112,41 @@ func main() {
 	exponent := 2
 	powerResult := math.Pow(float64(multiplier), float64(exponent))
 	fmt.Println(squareRoot,powerResult)
+	
+	
+	// Урок 9
+
+	// tr
+	fmt.Println(5 == 5)
+	// tr
+	fmt.Println(10 != 3)
+	// fl
+	fmt.Println(7 > 12)
+	// tr
+	fmt.Println(15 < 20)
+	fmt.Println(8 >= 8)
+	fmt.Println(6 <= 4)
+	fmt.Println((10 > 5) && (3 < 1))
+	fmt.Println((10 > 5) || (3 < 1))
+	fmt.Println(!(5 == 5))
+	fmt.Println(true && false)
+	fmt.Println(false || false)
+	fmt.Println(true || false)
+	fmt.Println((4 + 6 == 10) && (9 > 2))
+	fmt.Println((12 / 3 == 4) || (8 < 5))
+
+
+	age1 := 16
+	hasTicket :=true
+	canEnter := age1 >= 18 && hasTicket
+	fmt.Println(canEnter)
+
+	isLoggedIn := true
+	isAdmin := true
+	hasAccess:= isAdmin && isLoggedIn || isLoggedIn && !isAdmin
+	fmt.Println(hasAccess)
+
+
 
 
 
