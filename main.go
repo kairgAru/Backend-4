@@ -256,6 +256,99 @@ func main() {
 	}
 
 
+	// Урок 11
+
+	for i:=1; i<=20 ; i++ {
+		fmt.Println( i)
+	}
+
+
+	sum :=0
+	for i:=1 ; i<=100; i++ {
+		sum +=i
+	}
+	fmt.Println(sum)
+
+
+	number3 := 5 
+
+	for i := 1; i <= 10; i++ {
+		fmt.Println(number3, "x", i, "=", number3*i)
+	}
+
+
+	var t int
+
+	fmt.Print("Введите число: ")
+	fmt.Scan(&t)
+
+	for i := 1; i <= t; i++ {
+		if i%3 == 0 {
+			fmt.Println(i)
+		}
+	}
+
+
+	var num int
+	count := 0
+	fmt.Print("Введите число: ")
+	fmt.Scan(&num)
+	if num == 0 {
+		count = 1
+	} else {
+		if num < 0 {
+			num = -num
+		}
+		for num > 0 {
+			num = num / 10
+			count++
+		}
+	}
+	fmt.Println("Количество цифр:", count)
+
+
+	text := "Developer"
+	for i := 0; i < len(text); i++ {
+		fmt.Println(string(text[i]))
+	}
+
+
+	balance1 := 3000
+
+	for {
+		var choice int
+
+		fmt.Println("\nВыберите действие:")
+		fmt.Println("1 - Показать баланс")
+		fmt.Println("2 - Пополнить (+500)")
+		fmt.Println("3 - Снять (-200)")
+		fmt.Println("0 - Выход")
+		fmt.Print("Ваш выбор: ")
+
+		fmt.Scan(&choice)
+
+		switch choice {
+		case 1:
+			fmt.Println("Текущий баланс:", balance1)
+		case 2:
+			balance1 += 500
+			fmt.Println("Баланс пополнен. Новый баланс:", balance1)
+		case 3:
+			balance1 -= 200
+			fmt.Println("Списано 200. Новый баланс:", balance1)
+		case 0:
+			fmt.Println("Выход из программы")
+			break
+		default:
+			fmt.Println("Неверный ввод")
+		}
+
+		if choice == 0 {
+			break
+		}
+	}
+
+
 
 
 
