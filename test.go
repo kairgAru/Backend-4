@@ -184,7 +184,7 @@ func main() {
 		for j := 0; j < 4; j++ {
 			fmt.Print(arr3[i][j], " ")
 		}
-		fmt.Println()
+		fmt.Println() 
 	}
 
 }
